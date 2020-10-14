@@ -1,0 +1,12 @@
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\bin\Release\DarkTitleBarEnabler.exe.config
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\bin\Release\DarkTitleBarEnabler.exe
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\bin\Release\DarkTitleBarEnabler.pdb
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.csprojAssemblyReference.cache
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.About.resources
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.Messages.resources
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.Options.resources
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.Properties.Resources.resources
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.csproj.GenerateResource.cache
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.csproj.CoreCompileInputs.cache
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.exe
+C:\Coding\DarkTitleBarEnabler\DarkTitleBarEnabler\obj\Release\DarkTitleBarEnabler.pdb
