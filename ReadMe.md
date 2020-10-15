@@ -31,8 +31,8 @@
   
 ## Run Watcher 
   - Runs a Registry watcher in backgound which will check the reg for changed values.
-  ..The interval value from the options menu can be used to set the interval of the Watcher to check the registry for changes.
-  ..Additional can the watcher be used to pick a new border color from the windows menu. Since the OS
+  The interval value from the options menu can be used to set the interval of the Watcher to check the registry for changes.
+  Additional can the watcher be used to pick a new border color from the windows menu. Since the OS
   may change the Accent colors on purpose, you don't need to reset the dark theme or your private one all the time
   just for picking a new border color
   <p align="center">
@@ -47,6 +47,7 @@
   
   - Click the both arrow pictures to load actual set colors from the registry
   - or click the dark theme pic to apply the dark theme from the options menu
+  - Interval is used for the Watcher, to tell him when to check for changed values
   <p align="center">
     <img src="https://user-images.githubusercontent.com/1683181/96077713-d37ab780-0eb0-11eb-9fde-9b04b129c0ed.jpg">
   </p>
