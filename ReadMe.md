@@ -3,8 +3,9 @@
   Enables windows dark title bars for old apps.
   Does also activate Inactive Accent color within registry.
   Needs Admin rights to run proper.
-  
-  ![1](https://user-images.githubusercontent.com/1683181/96075137-b347fa00-0eaa-11eb-8746-2eae62179d34.jpg)
+  <p align="center">
+    <img source="https://user-images.githubusercontent.com/1683181/96075137-b347fa00-0eaa-11eb-8746-2eae62179d34.jpg"\>
+  </p>
   
 ## Apply User Theme 
   - Will write the user defined colors from the optins menu, into the registry.
@@ -25,11 +26,11 @@
   ..The interval value from the options menu can be used to set the interval of the Watcher to check the registry for changes.
   ..Additional can the watcher be used to pick a new border color from the windows menu. Since the OS
   may change the Accent colors on purpose, you don't need to reset the dark theme or your private one all the time
-  just for picking a new border color.
+  just for picking a new border color
   ![6](https://user-images.githubusercontent.com/1683181/96076045-be038e80-0eac-11eb-8b21-0c19d7805dde.jpg)
                      
 ## Options 
-  - Let you change your own color and set some flags.
+  - Let you change your own color and set some flags
   ![7](https://user-images.githubusercontent.com/1683181/96076115-db385d00-0eac-11eb-9e02-f5665240aa21.jpg)
   
   - Click the both arrow pictures to load actual set colors from the registry
