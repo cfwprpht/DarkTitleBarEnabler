@@ -83,9 +83,15 @@ namespace DarkTitleBarEnabler {
                             if (!DarkEnabler.AccentColorInactive.Hack()) dwm_ok = false;
                             else DarkEnabler.SetHackApplied();
                         } // Check if reg Color do match stored one. Change it if not.
-                        if (dwm_ok && !DarkEnabler.AccentColor.FromRegistry().Equals(DarkEnabler.GetAccentColor(), ccIgnoreCase))
+                        if (dwm_ok && !DarkEnabler.AccentColor.FromRegistry().Equals(DarkEnabler.GetAccentColor(), ccIgnoreCase)) {
                             if (!DarkEnabler.AccentColor.Hack()) dwm_ok = false;
                             else DarkEnabler.SetHackApplied();
+                        } // Toogle Color prevalence
+                        state = DarkEnabler.ColorPrevalence.Exists();
+                        if (dwm_ok && state == RegCheck.True && !DarkEnabler.ColorPrevalence.FromRegistry().Equals(1)) {
+                            if (!DarkEnabler.ColorPrevalence.Toogle()) dwm_ok = false;
+                            else DarkEnabler.SetHackApplied();
+                        }
                     }
 
                     // Shall we run the Registry Watcher on start of the app?
@@ -101,7 +107,7 @@ namespace DarkTitleBarEnabler {
                     }
                 }
             } else Options.Error("You must run this app with Administrator rights.\nAll registry functions have been disabled.");
-                        
+
             // Initialize menuItems
             menuItemExit.MergeIndex       = 0;
             menuItemExit.Text             = "Exit";
@@ -193,6 +199,9 @@ namespace DarkTitleBarEnabler {
             DarkEnabler.SetUserFlag(false);
             if (DarkEnabler.AccentColor.Hack()) DarkEnabler.SetHackApplied();
             if (DarkEnabler.AccentColorInactive.Hack()) DarkEnabler.SetHackApplied();
+            if (!DarkEnabler.ColorPrevalence.FromRegistry().Equals(1)) {
+                if (DarkEnabler.ColorPrevalence.Toogle()) DarkEnabler.SetHackApplied();
+            }
         }
 
         /// <summary>
@@ -204,6 +213,9 @@ namespace DarkTitleBarEnabler {
             DarkEnabler.SetUserFlag(true);
             if (DarkEnabler.AccentColor.Hack()) DarkEnabler.SetHackApplied();
             if (DarkEnabler.AccentColorInactive.Hack()) DarkEnabler.SetHackApplied();
+            if (!DarkEnabler.ColorPrevalence.FromRegistry().Equals(1)) {
+                if (DarkEnabler.ColorPrevalence.Toogle()) DarkEnabler.SetHackApplied();
+            }
         }
 
         /// <summary>

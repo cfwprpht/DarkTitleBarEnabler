@@ -1431,11 +1431,11 @@ namespace DarkTitleBarEnabler {
         /// <param name="source">The source Array.</param>
         /// <param name="value">The value to add.</param>
         /// <returns>The new Array with the added value.</returns>
-        public static T[] Add<T>(this T[] source, T value) {
+        public static void Add<T>(this T[] source, T value) {
             T[] newArray = new T[source.Length + 1];
             Array.Copy(source, newArray, source.Length);
             newArray[newArray.Length - 1] = value;
-            return newArray;
+            source = newArray;
         }
 
         /// <summary>
@@ -1445,13 +1445,12 @@ namespace DarkTitleBarEnabler {
         /// <param name="source">The source Array.</param>
         /// <param name="value">The value to remove.</param>
         /// <returns>The new Array with removed value.</returns>
-        public static T[] Remove<T>(this T[] source, T value) {
-            T[] newArray = new T[source.Length - 1];
+        public static void Remove<T>(this T[] source, T value) {
+            T[] newArray = new T[0];
             if ((a = source.IndexOf(value)) != -1) {                
-                for (int z = 0; z < source.Length; z++) if (z != a) newArray = newArray.Add(source[z]);
-                return newArray;
+                for (int z = 0; z < source.Length; z++) if (z != a) newArray.Add(source[z]);
+                source = newArray;
             }
-            return source;
         }
 
         /// <summary>
@@ -1460,7 +1459,7 @@ namespace DarkTitleBarEnabler {
         /// <typeparam name="T">The Type of the array to use.</typeparam>
         /// <param name="source">The source Array.</param>
         /// /// <returns>The new Array with the added value.</returns>
-        public static T[] RemoveLast<T>(this T[] source) { return source.Remove(source[source.Length - 1]); }
+        public static void RemoveLast<T>(this T[] source) { source.Remove(source[source.Length - 1]); }
     }
 
     /// <summary>
@@ -1603,9 +1602,9 @@ namespace DarkTitleBarEnabler {
         public static void Right(this Button source, Control parent, Button[] otherButtons) {
             Button toUse = otherButtons[otherButtons.Length - 1];
             otherButtons[otherButtons.Length - 1].Right(parent);
-            otherButtons = otherButtons.RemoveLast();
+            otherButtons.RemoveLast();
             if (otherButtons.Length > 1) Array.Reverse(otherButtons);
-            otherButtons = otherButtons.Add(source);
+            otherButtons.Add(source);
             foreach (Button button in otherButtons) { button.Location = new Point(toUse.Location.X + toUse.Size.Width + 5, button.Location.Y); toUse = button; }
         }
     }

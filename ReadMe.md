@@ -7,6 +7,10 @@
     <img src="https://user-images.githubusercontent.com/1683181/96075137-b347fa00-0eaa-11eb-8746-2eae62179d34.jpg">
   </p>
   
+## HotFix 'ColorPrevalence'
+  - Did forget to add the ColorPrevalence Hack since it was already set on my machine for debugging purpose.
+    But without the shell will not show the fresh applied changes.
+  
 ## Apply User Theme 
   - Will write the user defined colors from the optins menu, into the registry.
   <p align="center">

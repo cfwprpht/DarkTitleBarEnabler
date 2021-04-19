@@ -439,7 +439,7 @@ namespace DarkTitleBarEnabler {
             internal static bool Toogle() {
                 try {
                     RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\DWM\", true);
-                    if (key != null) key.SetValue("ColorPrevalence", !(bool)key.GetValue("ColorPrevalence"));
+                    if (key != null) key.SetValue("ColorPrevalence", BitConverter.GetBytes(Convert.ToInt32(1)), RegistryValueKind.Binary);
                     else {
                         Debug.WriteLine("[Toogle][Prevalence][Error]: Couldn't get Registry Key for writing!");
                         key.Close();
